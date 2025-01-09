@@ -1,0 +1,713 @@
+@charset "UTF-8";
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Hiragino Kaku Gothic ProN" 、 "ヒラギノ角ゴ ProN" 、
+    "Hiragino Kaku Gothic Pro" 、 "ヒラギノ角ゴ Pro";
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ヘッダー */
+.header {
+  max-width: 1000px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 12;
+  background-color: #fff;
+  border-bottom: 5px solid #e2f0d9;
+}
+/* ヘッダーの一番上 */
+.headertop {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+/* ヘッダー左部分 */
+.headertopleft {
+  max-width: 100%;
+  padding: 30px 50px 20px 30px;
+}
+.headertopleft img {
+  width: 100%;
+}
+
+.headertopleft img {
+  display: flex;
+  align-items: center;
+  max-width: 390px;
+  min-width: 194px;
+}
+/* ヘッダー右部分 */
+.headertopright {
+  max-width: 100%;
+  margin: 30 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pcnumber {
+  max-width: 100%;
+  font-size: 4.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.num::before {
+  content: "";
+  background-image: url(../images/icon1.png);
+  background-size: contain;
+  display: inline-block;
+  width: 1em;
+  height: 1.4em;
+  background-repeat: no-repeat;
+  margin-right: 0.2em;
+}
+@media screen and (max-width: 680px) {
+  .pcnumber {
+    max-width: 100%;
+    font-size: 1.9rem;
+  }
+}
+/* お電話でのみ受け付けております */
+.headerword {
+  margin-top: 15px;
+  max-width: 100%;
+  font-size: 2rem;
+}
+@media screen and (max-width: 680px) {
+  .headerword {
+    margin-top: 10px;
+    max-width: 100%;
+    font-size: 1.3rem;
+    color: #4d4e4d;
+  }
+}
+
+/* ↓ナビボタン、PC版のみ横一列固定表示 */
+.navbtn {
+  max-width: 90%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 0 auto;
+  position: sticky;
+  top: 125px;
+  left: 0;
+  text-align: center;
+  align-items: center;
+  z-index: 11;
+}
+@media screen and (max-width: 900px) {
+  .navbtn {
+    top: 16%;
+  }
+}
+@media screen and (max-width: 830px) {
+  .navbtn {
+    top: 14%;
+  }
+}
+/* ↓ナビボタン　spはpc版のaタグを利用し２列で折り返して表示 */
+@media screen and (max-width: 680px) {
+  .navbtn {
+    max-width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: 100px 100px; */
+    position: static;
+  }
+}
+.navbtn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e2f0d9;
+  height: 73px;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #477749;
+  border: 1px solid #fff;
+  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
+    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+}
+.navbtn a:hover {
+  background-color: #477749;
+  color: #fff;
+}
+
+/* ナビボタン両端の角を丸くする */
+.btnleft {
+  border-bottom-left-radius: 15px;
+}
+.btnright {
+  border-bottom-right-radius: 15px;
+}
+
+/* sp版ナビボタン装飾 */
+@media screen and (max-width: 680px) {
+  .navbtn a {
+    justify-content: left;
+    padding-left: 10px;
+    background-color: transparent;
+    color: #603813;
+    font-size: 1.8rem;
+    height: 100px;
+  }
+  .navA {
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 1),
+        rgba(255, 255, 255, 0)
+      ),
+      url(../images/sptopimg3.png);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .navB {
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 1),
+        rgba(0, 0, 0, 0)
+      ),
+      url(../images/sptopimg4.png);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .navC {
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 1),
+        rgba(0, 0, 0, 0)
+      ),
+      url(../images/sptopimg5.png);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .btnright {
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 1),
+        rgba(0, 0, 0, 0)
+      ),
+      url(../images/sptopimg6.png);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0;
+  }
+  .arrow {
+    position: relative;
+    width: 50px;
+  }
+  .arrow::before,
+  .arrow::after {
+    content: "";
+    position: absolute;
+    top: calc(50%-2px);
+    right: 0;
+    width: 35px;
+    height: 4px;
+    background-color: #477749;
+    border-radius: 9999px;
+    transform-origin: calc(100% - 2px) 50%;
+  }
+  .arrow::before {
+    transform: rotate(45deg);
+  }
+  .arrow::after {
+    transform: rotate(-45deg);
+  }
+}
+
+/* ↓各項目のタイトル、全ページ共通 */
+.title {
+  max-width: 100%;
+  display: flex;
+  margin-top: 70px;
+  border-bottom: 5px solid #668e68;
+}
+@media screen and (max-width: 680px) {
+  .title {
+    justify-content: center;
+  }
+}
+.titleword {
+  max-width: 100%;
+  color: #f8b500;
+  font-size: 3.2rem;
+  margin-left: 27px;
+  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
+    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+}
+.titleicon {
+  max-width: 100%;
+  margin-left: 5px;
+}
+/* ここまで共通 */
+
+/* 時間の前のカレンダーアイコン */
+.time::before {
+  content: "";
+  background-image: url(../images/icon3.png);
+  background-size: contain;
+  display: inline-block;
+  width: 1em;
+  height: 1.4em;
+  background-repeat: no-repeat;
+  margin-right: 0.5em;
+  position: relative;
+  top: 7px;
+}
+
+/* ↓横並びボックス形式の共通指定 */
+.box {
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+  width: 100%;
+}
+@media screen and (max-width: 680px) {
+  .box {
+    grid-template-columns: 1fr;
+  }
+}
+/* ここまで */
+
+/* ボックス形式のタイトル（茶色文字、白マーカー）の指定 */
+.boxtitle {
+  max-width: 100%;
+  font-size: 2rem;
+  color: #603813;
+  height: 58px;
+  line-height: 130%;
+  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
+    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+}
+.marker {
+  background: linear-gradient(transparent 50%, #fff 50%);
+}
+
+/* ↓緑の丸のページリンクボタンの共通指定 */
+.btncenter {
+  text-align: center;
+}
+.btn {
+  display: inline-block;
+  font-size: 25px;
+  max-width: 30%;
+  background-color: #668e68;
+  border-radius: 50px;
+  margin-top: 68px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
+    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  padding: 30px 50px;
+  outline: 2px solid #fff;
+  outline-offset: -7px;
+  position: relative;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+.btn:hover {
+  background: #fff;
+  color: #668e68;
+  outline: 2px solid #668e68;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 680px) {
+  .btn {
+    max-width: 85%;
+    font-size: 1.8rem;
+    padding: 25px 40px;
+  }
+}
+
+/* ↓カレンダー共通指定 */
+.calender {
+  max-width: 90%;
+  display: grid;
+  grid-template-columns: 2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  margin: 100px auto 0;
+  border-radius: 10px;
+  border: 3px solid #668e68;
+  background-color: #fff;
+  /* padding: 5px; */
+}
+.griditem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  line-height: 200%;
+  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
+    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  /* text-align: center; */
+}
+@media screen and (max-width: 770px) {
+  .griditem {
+    font-size: 3.2rem;
+  }
+}
+.cgi1 {
+  background-color: #668e68;
+  color: #fff;
+  border-bottom: 2px solid #668e68;
+}
+.cgi2 {
+  background-color: #fff4c8;
+  color: #477749;
+  border-bottom: 2px solid #668e68;
+}
+.cgi3 {
+  color: #477749;
+}
+.boderw {
+  border-left: 2px solid #fff;
+}
+.borderg {
+  border-left: 2px solid #668e68;
+  font-size: 5rem;
+}
+@media screen and (max-width: 680px) {
+  .griditem {
+    font-size: 1.8rem;
+    width: 100%;
+  }
+}
+.accesstimeword1 {
+  max-width: 90%;
+  margin: 30px auto 0;
+  font-size: 2.2rem;
+  color: #fff;
+  line-height: 150%;
+}
+.accesstimeword2 {
+  max-width: 90%;
+  margin: 30px auto 0;
+  font-size: 2.2rem;
+  color: #fff;
+  line-height: 150%;
+  padding-bottom: 40px;
+}
+.dot::before {
+  position: relative;
+  top: 13px;
+  content: "▪︎";
+  color: #668e68;
+  font-size: 6rem;
+  margin-right: -6px;
+}
+@media screen and (max-width: 680px) {
+  .accesstimeword1 {
+    font-size: 1.9rem;
+  }
+  .accesstimeword2 {
+    font-size: 1.9rem;
+  }
+}
+.s {
+  font-size: 1.6rem;
+}
+/* フッター */
+.footer {
+  max-width: 100%;
+  background-color: #e2f0d9;
+}
+@media screen and (max-width: 680px) {
+  .footer {
+    background-color: transparent;
+  }
+}
+.pcfooterflex {
+  display: flex;
+}
+.footerleft {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 67px 23px 70px 54px;
+}
+@media screen and (max-width: 740px) {
+  .footerleft {
+    padding: 67px 10px 70px 30px;
+  }
+}
+.logo {
+  width: 88%;
+}
+.tellword {
+  margin-top: 10%;
+  font-size: 2.1rem;
+  color: #477749;
+}
+.pcnumber2 {
+  margin-top: 10px;
+  font-size: 3.8rem;
+  display: flex;
+  align-items: center;
+  color: #477749;
+}
+.adress {
+  margin-top: 40px;
+  font-size: 2.4rem;
+  color: #477749;
+}
+.footerright {
+  width: 50%;
+}
+.fcmargin {
+  margin-top: 57px;
+}
+.atwm {
+  margin-top: 10px;
+  font-size: 2rem;
+  color: #477749;
+}
+.banner {
+  display: flex;
+  text-align: center;
+}
+.banneritem a img {
+  max-width: 80%;
+  /* width: 185px; */
+  /* margin-top: -5px;
+  box-shadow: 0 8px 5px rgba(92, 62, 16, 0.5); */
+  overflow: hidden;
+}
+.banneritem a img:hover {
+  /* margin-top: 0;
+  box-shadow: 0 4px 5px rgba(92, 62, 16, 0.5); */
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+@media screen and (max-width: 680px) {
+  .banneritem a img {
+    margin-top: 0;
+    box-shadow: none;
+  }
+}
+.upbtn {
+  /* display: inline-block; */
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 100px;
+  z-index: 20;
+  text-align: center;
+}
+.upbtn a {
+  text-decoration: none;
+}
+@media screen and (max-width: 680px) {
+  .upbtn {
+    width: auto;
+    margin-top: 30px;
+    position: static;
+    text-align: center;
+  }
+}
+.upword {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
+    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  color: #000;
+}
+.flogo {
+  width: 50%;
+  margin: 30px auto;
+}
+.spfooterflex {
+  display: flex;
+}
+.spfooterleft {
+  width: 50%;
+  padding: 25px 25px;
+}
+.spflitem {
+  display: block;
+  text-align: right;
+  font-size: 1.8rem;
+  color: #477749;
+  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
+    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  margin: 30px auto;
+}
+.spfooterright {
+  width: 50%;
+  padding: 25px 25px;
+}
+.spfritem {
+  display: block;
+  text-align: left;
+  font-size: 1.8rem;
+  color: #477749;
+  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
+    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  margin: 30px auto;
+}
+
+.cr {
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #668e68;
+  margin-top: 10px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 680px) {
+  .cr {
+    background-color: transparent;
+    color: #477749;
+    padding-top: 10px;
+  }
+}
+
+.positionfixd {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+}
+.positionfixd1 {
+  /* width: inherit; */
+  /* max-width: 680px; */
+  /* width: 100%; */
+  /* max-width: 100%; */
+  display: flex;
+  background-color: #e2f0d9;
+  text-align: center;
+  align-items: center;
+  border-top: 2px solid #668e68;
+  /* height: 65px; */
+
+  /* margin-top: 50px; */
+}
+
+.spfleft {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #477749;
+  width: calc(100% / 3);
+  background-image: url(../images/spfootimg1.png);
+  background-size: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-decoration: none;
+  padding: 23px;
+}
+.spfcenter {
+  display: inline-block;
+  width: calc(100% / 3);
+  background-image: url(../images/spfootimg2.png);
+  background-size: 43px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 25px;
+  border-left: 2px solid #668e68;
+  border-right: 2px solid #668e68;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #477749;
+}
+
+.spfright {
+  display: inline-block;
+  width: calc(100% / 3);
+  background-image: url(../images/spfootimg3.png);
+  background-size: 45px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 25px;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #477749;
+}
+
+/* ページタイトル共通 */
+.phbackcolor {
+  width: 80%;
+  background-color: rgba(253, 235, 185, 0.4);
+  margin: 0 auto;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.phtitle {
+  margin: 20px auto;
+  text-align: center;
+  font-size: 3rem;
+  color: #477749;
+  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
+    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+}
+@media screen and (max-width: 680px) {
+  .phtitle {
+    font-size: 2.8rem;
+    margin: 5px auto;
+  }
+}
+.phword {
+  font-size: 2rem;
+  color: #603813;
+  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
+    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  margin: 0 auto;
+  width: 50%;
+  line-height: 160%;
+}
+@media screen and (max-width: 680px) {
+  .phword {
+    width: 90%;
+    font-size: 1.8rem;
+    margin: 3px auto;
+  }
+}
+/* リンクライン ホーム＞〇〇　のやつ */
+.linerlink {
+  color: #603813;
+  font-size: 1.8rem;
+  margin: 20px 0 20px;
+}
+
+.pc {
+  display: block;
+}
+@media screen and (max-width: 680px) {
+  .pc {
+    display: none;
+  }
+}
+.sp {
+  display: none;
+}
+@media screen and (max-width: 680px) {
+  .sp {
+    display: block;
+  }
+}
