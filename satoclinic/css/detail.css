@@ -1,0 +1,322 @@
+@charset "UTF-8";
+
+/* ２ページ以降ナビボタン必須 */
+.navbtn {
+  display: grid;
+  max-width: 100%;
+  top: 140px;
+  left: 0;
+}
+@media screen and (max-width: 870px) {
+  .navbtn {
+    top: 120px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .navbtn {
+    display: none;
+  }
+}
+.peagehead1 {
+  width: 90%;
+  /* max-width: 90%; */
+  background-image: url(../images/detailimg1.png);
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+@media screen and (max-width: 680px) {
+  .peagehead1 {
+    width: 100%;
+    height: 300px;
+    background-image: url(../images/spdetailimg1.png);
+    padding-bottom: 5%;
+  }
+}
+
+/* 診療時間 */
+.officehours {
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.officehours1 {
+  display: flex;
+  background-color: #e2f0d9;
+  margin: 20px 0 20px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 680px) {
+  .officehours1 {
+    display: block;
+    background-color: transparent;
+    margin: 20px 0 20px;
+    border-radius: 0;
+  }
+}
+.officehours1left {
+  width: 55%;
+  align-items: center;
+}
+@media screen and (max-width: 680px) {
+  .officehours1left {
+    width: 100%;
+  }
+}
+/* .griditem {
+  font-size: 2.4rem;
+} */
+.griditem2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.4rem;
+  line-height: 200%;
+  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
+    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  /* text-align: center; */
+}
+.officehours1right {
+  width: 45%;
+}
+@media screen and (max-width: 680px) {
+  .officehours1right {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.d {
+  color: black;
+}
+.marginleft {
+  margin-left: 50px;
+}
+
+/* 診療科目 */
+.medicalsubject {
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.medicalsubject1 {
+  position: relative;
+  padding-bottom: 440px;
+}
+.msdotcercle {
+  width: 196px;
+  height: 196px;
+  border-width: 7px;
+  border-style: dashed;
+  border-radius: 100px;
+  color: #e2f0d9;
+}
+
+/* .msdotcercle {
+  width: 196px;
+  height: 196px;
+  background-image: linear-gradient(to right, #e2f0d9 70%, #fff 70%);
+  background-size: 12px 8px;
+} */
+.mscercle {
+  width: 169px;
+  height: 169px;
+  background-color: rgba(248, 181, 0, 0.3);
+  border-radius: 50%;
+  margin: 15px auto;
+}
+.msword {
+  font-size: 3.4rem;
+  color: #603813;
+  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
+    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  display: flex;
+  justify-content: center;
+  padding-top: 35%;
+}
+.msword2 {
+  font-size: 2.6rem;
+  color: #603813;
+  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
+    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  display: flex;
+  justify-content: center;
+}
+.msa {
+  position: absolute;
+  top: 78px;
+  left: 0;
+}
+.msb {
+  position: absolute;
+  top: 200px;
+  left: 168px;
+}
+.msc {
+  position: absolute;
+  top: 78px;
+  left: 330px;
+}
+.msd {
+  position: absolute;
+  top: 200px;
+  left: 500px;
+}
+.msdotcercle2 {
+  width: 240px;
+  height: 240px;
+  border-width: 7px;
+  border-style: dashed;
+  border-radius: 50%;
+  color: #e2f0d9;
+}
+.mscercle2 {
+  width: 211px;
+  height: 211px;
+  background-color: rgba(248, 181, 0, 0.3);
+  border-radius: 50%;
+  margin: 15px auto;
+}
+.mse {
+  position: absolute;
+  top: 78px;
+  left: 690px;
+}
+.medicalsubject1word {
+  font-size: 2rem;
+}
+.spmedicalsubject1 {
+  margin: 50px auto;
+  text-align: center;
+}
+.spmedicalsubject1 img {
+  width: 100%;
+}
+
+/* 所在地 */
+.place {
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.place1 {
+  display: flex;
+  background-color: #e2f0d9;
+  margin: 20px 0 20px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 680px) {
+  .place1 {
+    display: block;
+    background-color: transparent;
+  }
+}
+.mapwidth {
+  width: 50%;
+  margin: 50px 20px;
+}
+@media screen and (max-width: 680px) {
+  .mapwidth {
+    width: 100%;
+  }
+}
+.map {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 75%;
+}
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.placeword {
+  width: 45%;
+  padding: 50px 5px 50px 10px;
+}
+@media screen and (max-width: 680px) {
+  .placeword {
+    width: 100%;
+  }
+}
+.placeword1 {
+  font-size: 2rem;
+  margin-left: -5px;
+}
+.dot2::before {
+  position: relative;
+  top: 5px;
+  content: "▪︎";
+  color: #668e68;
+  font-size: 3.5rem;
+  margin-right: -6px;
+}
+.placeword2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 40px;
+  line-height: 140%;
+}
+.placeword3 {
+  font-size: 1.8rem;
+  line-height: 150%;
+}
+/* 連絡先 */
+.detailadress {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.adress1 {
+  margin-top: 59px;
+}
+.adbox {
+  width: 35%;
+  background-color: #e2f0d9;
+  border: 1px solid #668e68;
+  border-radius: 20px;
+  display: flex;
+  padding: 15px 10px;
+  margin: 20px auto;
+}
+@media screen and (max-width: 680px) {
+  .adbox {
+    width: 90%;
+  }
+}
+.adboxleft {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.adboxleft img {
+  max-width: 50px;
+}
+.adboxright {
+  width: 70%;
+  font-size: 2rem;
+  line-height: 150%;
+}
+.fontcolor {
+  color: #f8b500;
+}
+.adboxflex {
+  display: flex;
+}
+@media screen and (max-width: 680px) {
+  .adboxflex {
+    display: block;
+  }
+}
+.detailadress {
+  padding-bottom: 50px;
+}

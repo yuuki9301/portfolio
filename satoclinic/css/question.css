@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+/* ２ページ以降ナビボタン必須 */
+.navbtn {
+  display: grid;
+  max-width: 100%;
+  top: 140px;
+  left: 0;
+}
+@media screen and (max-width: 870px) {
+  .navbtn {
+    top: 120px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .navbtn {
+    display: none;
+  }
+}
+.peagehead1 {
+  width: 90%;
+  /* max-width: 90%; */
+  background-image: url(../images/detailimg1.png);
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+@media screen and (max-width: 680px) {
+  .peagehead1 {
+    width: 100%;
+    height: 300px;
+    background-image: url(../images/spdetailimg1.png);
+    padding-bottom: 5%;
+  }
+}
+
+/* ジャンプボタン緑４列 */
+.qjanpglid {
+  width: 95%;
+  margin: 60px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 5px;
+}
+/* .qjanpglid a {
+  display: inline-block;
+} */
+.qjgreen {
+  width: 80%;
+  background-color: #668e68;
+  border-radius: 40px;
+  color: #fff;
+  padding: 10px 10px;
+  text-align: center;
+  font-size: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 3px 3px rgba(66, 33, 11, 0.4);
+}
+@media screen and (max-width: 680px) {
+  .qjanpglid {
+    width: 95%;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5px;
+  }
+}
+
+/* 質問内容 */
+.qtitle {
+  text-align: center;
+  position: relative;
+  width: 93%;
+  margin: 0 auto;
+}
+.qtitle img {
+  width: 100%;
+}
+.qtitle p {
+  font-size: 3.6rem;
+  color: #fff;
+  position: absolute;
+  top: 70px;
+  left: 150px;
+  z-index: 2;
+  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
+    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+}
+.qa {
+  width: 85%;
+  margin: 70px auto;
+  font-size: 2rem;
+  color: #603813;
+}
+.qword {
+  background-color: #e2f0d9;
+  padding: 20px 13px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.aword {
+  width: 90%;
+  margin: 0 auto;
+  padding: 40px 0 40px;
+  line-height: 150%;
+}
+.qaend {
+  text-align: center;
+  position: relative;
+  margin-bottom: 50px;
+}
+.qaend p {
+  font-size: 2.4rem;
+  color: #fff;
+  position: absolute;
+  top: 65px;
+  left: 220px;
+  z-index: 2;
+  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
+    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+}
