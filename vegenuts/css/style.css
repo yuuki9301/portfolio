@@ -588,7 +588,7 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     width: calc(100% / 2);
-    margin: 0 auto;
+    /* margin: 0 auto; */
   }
   .drinkmenu li {
     display: flex;
