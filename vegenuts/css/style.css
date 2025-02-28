@@ -47,7 +47,7 @@ html {
   display: flex;
   background-image: url(../img/topimg2.png);
   background-repeat: no-repeat;
-  max-width: 1000px;
+  width: 1000px;
   height: 690px;
   position: relative;
 }
@@ -608,6 +608,7 @@ h3 {
 } */
 .drinkmenu li img {
   object-fit: cover;
+  min-width: 50%;
 }
 .drinkmenu p {
   /* background-color: #004937; */
