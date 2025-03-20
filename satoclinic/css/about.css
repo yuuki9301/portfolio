@@ -2,7 +2,12 @@
 
 * {
   box-sizing: border-box;
-  scroll-padding-top: 120px;
+  scroll-padding-top: 250px;
+}
+@media screen and (max-width: 870px) {
+  * {
+    scroll-padding-top: 120px;
+  }
 }
 
 /* ２ページ以降ナビボタン必須 */
@@ -130,11 +135,26 @@
 .family {
   display: flex;
   margin-bottom: 100px;
-  margin: 100px auto 0;
+  margin: 100px auto 40px;
+  padding-bottom: 125px;
+}
+@media screen and (max-width: 680px) {
+  .family {
+    width: 90%;
+    padding-bottom: 150px;
+  }
 }
 
-.family > div {
-  margin-top: 100px;
+.family img {
+  margin-top: 140px;
+}
+@media screen and (max-width: 680px) {
+  .family img {
+    margin-top: 30px;
+  }
+  .family img:nth-child(2) {
+    margin-top: 180px;
+  }
 }
 .family > dl > dt {
   width: 90%;
@@ -148,10 +168,10 @@
   padding-bottom: 5px;
   margin: 0 auto;
 }
-.family > dl > dd {
+/* .family > dl > dd {
   background-color: #e2f0d9;
   border-radius: 60px;
-}
+} */
 .family > dl > dd {
   font-size: 19px;
   margin-top: 30px;
@@ -160,10 +180,15 @@
 .familyimgleft {
   position: relative;
 }
+@media screen and (max-width: 680px) {
+  .familyimgleft {
+    margin-top: 145px;
+  }
+}
 .left {
   position: absolute;
-  top: 20%;
-  right: -80%;
+  top: 80%;
+  right: -70%;
 }
 .photo {
   width: 30%;
@@ -174,14 +199,24 @@
 .familyimgright {
   position: relative;
 }
-/* .right {
+.right {
   position: absolute;
-  top: 20%;
-  left: -80%;
-} */
+  top: 60%;
+  left: -75%;
+}
+@media screen and (max-width: 680px) {
+  .right {
+    top: 85%;
+    left: -20%;
+  }
+  .left {
+    top: 90%;
+    right: -20%;
+  }
+}
 .txt_m {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   border: 3px dashed orange;
   padding: 20px;
@@ -216,12 +251,6 @@
   }
   .txt_m {
     margin-top: 0;
-  }
-  .right {
-    position: static;
-  }
-  .left {
-    position: static;
   }
   .familyimgright {
     align-self: flex-end;
