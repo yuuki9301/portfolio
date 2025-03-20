@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+* {
+  box-sizing: border-box;
+  scroll-padding-top: 120px;
+}
+
 /* ２ページ以降ナビボタン必須 */
 .navbtn {
   display: grid;
@@ -19,7 +24,6 @@
 }
 .peagehead1 {
   width: 90%;
-  /* max-width: 90%; */
   background-image: url(../images/aboutimg1.png);
   margin: 0 auto;
   background-size: cover;
@@ -31,8 +35,7 @@
 @media screen and (max-width: 680px) {
   .peagehead1 {
     width: 100%;
-    height: 300px;
-    background-image: url(../images/spcontent1.png);
+    background-image: url(../images/spaboutimg2.png);
     padding-bottom: 5%;
   }
 }
@@ -44,17 +47,12 @@
 .listbtn1 {
   width: 90%;
   margin: 60px auto 0;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   column-gap: 10px;
-  row-gap: 5px;
-}
-@media screen and (max-width: 680px) {
-  .listbtn1 {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 10px;
-    row-gap: 5px;
-  }
+  row-gap: 15px;
+  justify-content: center;
+  align-items: stretch;
 }
 .listbtn1 a {
   background-color: #e2f0d9;
@@ -64,45 +62,53 @@
   color: #603813;
   border: 2px solid #477749;
   box-shadow: 3px 3px 3px rgba(96, 56, 19, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(calc(100% - 30px) / 4);
 }
-.listbtn2 {
-  width: 70%;
-  margin: 60px auto 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 10px;
-  row-gap: 5px;
-}
-@media screen and (max-width: 680px) {
-  .listbtn2 {
-    width: 90%;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 5px auto;
-    column-gap: 5px;
-    row-gap: 5px;
-  }
-}
-.listbtn2 a {
-  background-color: #e2f0d9;
-  border-radius: 40px;
-  padding: 20px;
-  padding: 20px;
-  text-decoration: none;
-  color: #603813;
-  border: 2px solid #477749;
-  box-shadow: 3px 3px 3px rgba(96, 56, 19, 0.4);
-}
-.btn2 a:hover {
+.listbtn1 a:hover {
   background: #668e68;
   color: #fff;
   outline: 2px solid #668e68;
   transition: 0.3s;
 }
 
+@media screen and (max-width: 680px) {
+  .listbtn1 {
+    column-gap: 10px;
+    row-gap: 15px;
+    justify-content: center;
+  }
+  .listbtn1 a {
+    width: calc(100% / 2 - 5px);
+    font-size: 1.7rem;
+    height: 80px;
+  }
+}
+
 /* アバウト上半分、ボタン以下 */
 
-.at {
-  font-size: 2.7rem;
+.about_flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 100px;
+  margin: 100px auto 0;
+  width: 100%;
+  align-items: center;
+}
+@media screen and (max-width: 680px) {
+  .about_flex {
+    width: 90%;
+  }
+}
+.txt {
+  width: 60%;
+}
+.about_flex > dl > dt {
+  width: 90%;
+  font-size: 27px;
   color: #477749;
   font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
     "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
@@ -110,175 +116,127 @@
   text-align: center;
   border-bottom: 2px solid #477749;
   padding-bottom: 5px;
+  margin: 0 auto;
 }
-
-.abouta {
-  font-size: 1.9rem;
+.about_flex > dl > dd {
+  font-size: 19px;
   margin-top: 30px;
   line-height: 180%;
 }
-
-.about1 {
-  display: flex;
-  margin-top: 100px;
-  justify-content: space-between;
-  background-image: url(../images/aboutback1.png);
-  background-position: left;
-  background-repeat: no-repeat;
-  padding-top: 30px;
-}
-.about1left {
-  margin-left: 80px;
-}
-.abouttitle {
+.large {
   width: 80%;
-}
-.a1 {
-  margin-left: 60px;
-  width: 80%;
-}
-
-.about2 {
-  margin-top: 50px;
-  width: 80%;
-  margin-left: auto;
-  margin-right: 50px;
-}
-.abouttitle2 {
-  width: 50%;
-  margin-left: auto;
-}
-.a2 {
-  width: 80%;
-  background-image: url(../images/aboutback3.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-top: 10px;
-  margin-left: auto;
-  padding: 30px 0 50px 50px;
-}
-
-.about3 {
-  margin-top: 100px;
-  display: flex;
-}
-.abouttitle3 {
-  width: 60%;
-}
-.about3left {
-  width: 65%;
-  background-image: url(../images/aboutback4.png);
-  background-repeat: no-repeat;
-  background-position: left, bottom;
-  padding-left: 110px;
-  padding-right: 20px;
-}
-.about3left p {
-  width: 90%;
-}
-.about3img3 {
-  width: 35%;
-}
-/* .about3img3 img {
-  background-color: #e2f0d9;
-} */
-
-.about4 {
-  /* margin-top: 100px; */
-  width: 965px;
-  margin: 100px auto 0;
-  position: relative;
-}
-.abouttitle4 {
-  width: 40%;
   margin: 0 auto;
 }
-.a4 {
-  width: 45%;
-  background-image: url(../images/aboutback6.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right, bottom;
-  margin: 30px auto;
-  padding-bottom: 90px;
-  padding-right: 20px;
+.family {
+  display: flex;
+  margin-bottom: 100px;
+  margin: 100px auto 0;
 }
-.about4-2 {
-  position: absolute;
-  right: 0;
-  bottom: 40%;
+
+.family > div {
+  margin-top: 100px;
 }
-.about4-3 {
-  width: 25%;
-}
-.a4-3a {
-  width: 170px;
-  height: 170px;
-  background-image: url(../images/aboutimg16.png);
-  background-repeat: no-repeat;
-  position: absolute;
-  right: 30%;
-  bottom: 30%;
-}
-.about4-3a {
-  color: #668e68;
-  font-size: 2.1rem;
+.family > dl > dt {
+  width: 90%;
+  font-size: 27px;
+  color: #477749;
   font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
     "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
     "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  text-align: center;
+  border-bottom: 2px solid #477749;
+  padding-bottom: 5px;
+  margin: 0 auto;
 }
-.about4-3aword {
+.family > dl > dd {
+  background-color: #e2f0d9;
+  border-radius: 60px;
+}
+.family > dl > dd {
+  font-size: 19px;
   margin-top: 30px;
-  font-size: 1.6rem;
+  line-height: 180%;
+}
+.familyimgleft {
+  position: relative;
+}
+.left {
+  position: absolute;
+  top: 20%;
+  right: -80%;
+}
+.photo {
+  width: 30%;
+}
+.photo img {
+  width: 100%;
+}
+.familyimgright {
+  position: relative;
+}
+/* .right {
+  position: absolute;
+  top: 20%;
+  left: -80%;
+} */
+.txt_m {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px dashed orange;
+  padding: 20px;
+  display: flex;
+}
+.txt_m > dl {
+  align-content: center;
+}
+.txt_m > dl > dt {
+  font-size: 22px;
+  color: #477749;
   font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
     "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
     "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
-  line-height: 160%;
+  text-align: center;
 }
-.about4-3b {
-  text-align: right;
-  color: #668e68;
-  font-size: 2.1rem;
-  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
-    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
-    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+.txt_m > dl > dd {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 170%;
 }
-.about4-4 {
-  position: absolute;
-  width: 50;
-  left: 0%;
-  bottom: 20%;
+
+@media screen and (max-width: 900px) {
+  .photo {
+    width: 80%;
+  }
+  .txt {
+    width: 100%;
+  }
+  .family {
+    flex-direction: column;
+  }
+  .txt_m {
+    margin-top: 0;
+  }
+  .right {
+    position: static;
+  }
+  .left {
+    position: static;
+  }
+  .familyimgright {
+    align-self: flex-end;
+  }
+  .order1 {
+    order: 1;
+  }
+  .order2 {
+    order: 2;
+  }
 }
-.about4-3 {
-  position: absolute;
-  left: 5%;
-  bottom: 20%;
-}
-.about5 {
-  display: flex;
-  margin-top: 100px;
-}
-.about5right {
-  padding: 50px 0 10px 0;
-  background-image: url(../images/aboutback8.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
-}
-.abouttitle5 {
-  width: 65%;
-  margin-left: 40px;
-}
-.a5w {
-  width: 85%;
-  margin-left: auto;
-}
-.about6 {
-  display: flex;
-  margin-top: 100px;
-}
-.about6left {
-  width: 85%;
+@media screen and (max-width: 680px) {
+  .txt {
+    width: 100%;
+  }
 }
 
 /* 下半分 */
@@ -296,10 +254,20 @@
   background-image: url(../images/aboutimg12.png);
   padding: 30px 0;
 }
+@media screen and (max-width: 680px) {
+  .treeback {
+    background-image: none;
+  }
+}
 .abflex {
   display: flex;
   width: 90%;
   margin: 90px auto;
+}
+@media screen and (max-width: 680px) {
+  .abflex {
+    display: block;
+  }
 }
 .abflexleft {
   width: 35%;
@@ -307,6 +275,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 680px) {
+  .abflexleft {
+    width: 100%;
+  }
+  .abflex img {
+    width: 100%;
+  }
 }
 .abflnum {
   margin: 0 auto;
@@ -325,6 +301,14 @@
   font-size: 4.8rem;
   color: #603813;
   margin-top: 55px;
+  line-height: normal;
+}
+@media screen and (max-width: 680px) {
+  .abfltitle {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+  }
 }
 .abflexright {
   width: 65%;
@@ -332,11 +316,24 @@
   padding: 10px 40px;
   margin: 0 auto;
 }
+@media screen and (max-width: 680px) {
+  .abflexright {
+    width: 100%;
+    border-left: none;
+    border-top: 1px solid #477749;
+    margin-top: 30px;
+  }
+}
 .abfrword {
   font-family: 游明朝体;
   font-size: 1.9rem;
   line-height: 150%;
   margin-top: 50px;
+}
+@media screen and (max-width: 680px) {
+  .abfrword {
+    margin-top: 20px;
+  }
 }
 .abflexright img {
   margin: 50px auto;
