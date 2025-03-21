@@ -316,7 +316,7 @@ body {
 .btn {
   display: inline-block;
   font-size: 25px;
-  max-width: 30%;
+/*   max-width: 30%; */
   background-color: #668e68;
   border-radius: 50px;
   margin-top: 68px;
