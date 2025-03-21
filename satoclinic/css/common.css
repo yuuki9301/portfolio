@@ -1,4 +1,13 @@
 @charset "UTF-8";
+* {
+  box-sizing: border-box;
+  scroll-padding-top: 250px;
+}
+@media screen and (max-width: 870px) {
+  * {
+    scroll-padding-top: 120px;
+  }
+}
 html {
   font-size: 10px;
   scroll-behavior: smooth;

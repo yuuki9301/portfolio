@@ -1,5 +1,13 @@
 @charset "UTF-8";
-
+* {
+  box-sizing: border-box;
+  scroll-padding-top: 250px;
+}
+@media screen and (max-width: 870px) {
+  * {
+    scroll-padding-top: 120px;
+  }
+}
 /* ２ページ以降ナビボタン必須 */
 .navbtn {
   display: grid;

@@ -40,63 +40,58 @@
 }
 
 /* リンクアイコン */
+
 .listbtn {
   font-size: 2rem;
   text-align: center;
-  margin-bottom: 50px;
 }
 .listbtn1 {
   width: 90%;
-  margin: 60px auto 0;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 5px;
-  row-gap: 5px;
+  margin: 60px auto 60px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 15px;
+  justify-content: center;
+  align-items: stretch;
 }
-@media screen and (max-width: 680px) {
-  .listbtn1 {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 5px;
-    row-gap: 5px;
-  }
-}
-.listbtn li {
+.listbtn1 a {
   background-color: #e2f0d9;
   border-radius: 40px;
   padding: 20px;
-  box-shadow: 3px 3px 3px rgba(66, 33, 11, 0.4);
-}
-.listbtn1 a {
   text-decoration: none;
   color: #603813;
+  border: 2px solid #477749;
+  box-shadow: 3px 3px 3px rgba(96, 56, 19, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(calc(100% - 30px) / 4);
 }
-.listbtn2 {
-  width: 70%;
-  margin: 60px auto 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 5px;
-  row-gap: 5px;
+.listbtn1 a:hover {
+  background: #668e68;
+  color: #fff;
+  outline: 2px solid #668e68;
+  transition: 0.3s;
 }
+
 @media screen and (max-width: 680px) {
-  .listbtn2 {
-    width: 90%;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 5px auto;
-    column-gap: 5px;
-    row-gap: 5px;
+  .listbtn1 {
+    column-gap: 10px;
+    row-gap: 15px;
+    justify-content: center;
   }
-}
-.listbtn2 a {
-  padding: 20px;
-  text-decoration: none;
-  color: #603813;
+  .listbtn1 a {
+    width: calc(100% / 2 - 5px);
+    font-size: 1.8rem;
+    height: 80px;
+  }
 }
 
 /* 診察内容ボックス */
 .contentbox {
   width: 90%;
-  margin: 60px auto;
+  margin: 70px auto;
   display: flex;
 }
 @media screen and (max-width: 680px) {
@@ -123,7 +118,7 @@
   }
 }
 .contentbox1 p {
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
   background-color: #fff;
   border-radius: 20px;
@@ -134,6 +129,7 @@
 @media screen and (max-width: 680px) {
   .contentbox1 p {
     font-size: 3rem;
+    width: 90%;
   }
 }
 .contentbox1 img {
@@ -270,14 +266,4 @@
   margin-bottom: -3px;
   margin-right: 5%;
   width: 15%;
-}
-#a1,
-#a2,
-#a3,
-#a4,
-#a5,
-#a6,
-#a7 {
-  padding-top: 218px;
-  margin-top: -218px;
 }
