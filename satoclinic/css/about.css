@@ -352,6 +352,31 @@
     border-top: 1px solid #477749;
     margin-top: 30px;
   }
+  .back {
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .b1 {
+    background-image: url(../images/spcontentb5.png);
+  }
+  .b2 {
+    background-image: url(../images/spcontentb6.png);
+  }
+  .b3 {
+    background-image: url(../images/spcontentb7.png);
+  }
+  .b4 {
+    background-image: url(../images/spcontentb8.png);
+  }
+  .b5 {
+    background-image: url(../images/spcontentb9.png);
+  }
+  .b6 {
+    background-image: url(../images/spcontentb10.png);
+  }
+  .b7 {
+    background-image: url(../images/spcontentb12.png);
+  }
 }
 .abfrword {
   font-family: 游明朝体;
