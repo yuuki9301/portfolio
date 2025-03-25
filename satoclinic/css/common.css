@@ -12,9 +12,10 @@ html {
   font-size: 10px;
   scroll-behavior: smooth;
 }
-body {
-  font-family: "Hiragino Kaku Gothic ProN" 、 "ヒラギノ角ゴ ProN" 、
-    "Hiragino Kaku Gothic Pro" 、 "ヒラギノ角ゴ Pro";
+.body {
+  font-family: "Noto Serif Japanese" "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 .container {
   max-width: 1000px;
@@ -316,7 +317,7 @@ body {
 .btn {
   display: inline-block;
   font-size: 25px;
-/*   max-width: 30%; */
+  /* max-width: 30%; */
   background-color: #668e68;
   border-radius: 50px;
   margin-top: 68px;
@@ -339,14 +340,6 @@ body {
   color: #668e68;
   outline: 2px solid #668e68;
   transition: 0.3s;
-}
-
-@media screen and (max-width: 680px) {
-  .btn {
-    max-width: 85%;
-    font-size: 1.8rem;
-    padding: 25px 40px;
-  }
 }
 
 /* ↓カレンダー共通指定 */

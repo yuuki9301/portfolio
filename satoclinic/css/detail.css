@@ -1,13 +1,5 @@
 @charset "UTF-8";
-* {
-  box-sizing: border-box;
-  scroll-padding-top: 250px;
-}
-@media screen and (max-width: 870px) {
-  * {
-    scroll-padding-top: 120px;
-  }
-}
+
 /* ２ページ以降ナビボタン必須 */
 .navbtn {
   display: grid;
@@ -134,7 +126,7 @@
   height: 169px;
   background-color: rgba(248, 181, 0, 0.3);
   border-radius: 50%;
-  margin: 15px auto;
+  margin: 6px auto;
 }
 .msword {
   font-size: 3.4rem;
@@ -188,7 +180,7 @@
   height: 211px;
   background-color: rgba(248, 181, 0, 0.3);
   border-radius: 50%;
-  margin: 15px auto;
+  margin: 6px auto;
 }
 .mse {
   position: absolute;
@@ -208,7 +200,7 @@
 
 /* 所在地 */
 .place {
-  max-width: 95%;
+  /* max-width: 95%; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -217,6 +209,7 @@
   background-color: #e2f0d9;
   margin: 20px 0 20px;
   border-radius: 10px;
+  /* width: 100%; */
 }
 @media screen and (max-width: 680px) {
   .place1 {
@@ -231,6 +224,7 @@
 @media screen and (max-width: 680px) {
   .mapwidth {
     width: 100%;
+    margin: 0;
   }
 }
 .map {
