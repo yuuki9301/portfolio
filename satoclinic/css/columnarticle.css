@@ -134,3 +134,6 @@
   font-optical-sizing: auto;
   line-height: 175%;
 }
+.btn {
+  margin: 30px auto;
+}
