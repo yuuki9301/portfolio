@@ -34,9 +34,7 @@
   transform: translate(-50%, -50%);
   font-size: 3.6rem;
   color: #477749;
-  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
-    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
-    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  font-family: "Zen Maru Gothic", serif;
 }
 @media screen and (max-width: 680px) {
   .peageheadcolumn {
@@ -118,9 +116,7 @@
   border-radius: 40px;
   text-align: center;
   color: #fff;
-  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
-    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
-    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  font-family: "Zen Maru Gothic", serif;
   padding: 8px;
 }
 

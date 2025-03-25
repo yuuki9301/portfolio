@@ -142,9 +142,7 @@ html {
   font-size: 2rem;
   color: #477749;
   border: 1px solid #fff;
-  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
-    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
-    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  font-family: "Zen Maru Gothic", serif;
 }
 .navbtn a:hover {
   background-color: #477749;
@@ -255,9 +253,7 @@ html {
   color: #f8b500;
   font-size: 3.2rem;
   margin-left: 27px;
-  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
-    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
-    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  font-family: "Zen Maru Gothic", serif;
 }
 .titleicon {
   max-width: 100%;
@@ -302,9 +298,7 @@ html {
   color: #603813;
   height: 58px;
   line-height: 130%;
-  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
-    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
-    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  font-family: "Zen Maru Gothic", serif;
 }
 .marker {
   background: linear-gradient(transparent 50%, #fff 50%);
@@ -326,9 +320,7 @@ html {
   text-align: center;
   text-decoration: none;
   color: #fff;
-  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
-    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
-    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  font-family: "Zen Maru Gothic", serif;
   padding: 30px 50px;
   outline: 2px solid #fff;
   outline-offset: -7px;
@@ -359,9 +351,7 @@ html {
   align-items: center;
   font-size: 4rem;
   line-height: 200%;
-  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
-    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
-    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  font-family: "Zen Maru Gothic", serif;
   /* text-align: center; */
 }
 @media screen and (max-width: 770px) {
@@ -530,9 +520,7 @@ html {
 .upword {
   margin-top: 10px;
   font-size: 1.2rem;
-  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
-    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
-    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  font-family: "Zen Maru Gothic", serif;
   color: #000;
 }
 .flogo {
@@ -551,9 +539,7 @@ html {
   text-align: right;
   font-size: 1.8rem;
   color: #477749;
-  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
-    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
-    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  font-family: "Zen Maru Gothic", serif;
   margin: 30px auto;
 }
 .spfooterright {
@@ -565,9 +551,7 @@ html {
   text-align: left;
   font-size: 1.8rem;
   color: #477749;
-  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
-    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
-    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  font-family: "Zen Maru Gothic", serif;
   margin: 30px auto;
 }
 
@@ -663,9 +647,7 @@ html {
   text-align: center;
   font-size: 3rem;
   color: #477749;
-  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
-    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
-    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  font-family: "Zen Maru Gothic", serif;
 }
 @media screen and (max-width: 680px) {
   .phtitle {
@@ -676,9 +658,6 @@ html {
 .phword {
   font-size: 2rem;
   color: #603813;
-  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
-    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
-    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   margin: 0 auto;
   width: 50%;
   line-height: 160%;

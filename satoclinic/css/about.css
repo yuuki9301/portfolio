@@ -115,9 +115,7 @@
   width: 90%;
   font-size: 27px;
   color: #477749;
-  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
-    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
-    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  font-family: "Zen Maru Gothic", serif;
   text-align: center;
   border-bottom: 2px solid #477749;
   padding-bottom: 5px;
@@ -160,9 +158,7 @@
   width: 90%;
   font-size: 27px;
   color: #477749;
-  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
-    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
-    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  font-family: "Zen Maru Gothic", serif;
   text-align: center;
   border-bottom: 2px solid #477749;
   padding-bottom: 5px;
@@ -228,9 +224,7 @@
 .txt_m > dl > dt {
   font-size: 22px;
   color: #477749;
-  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
-    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
-    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  font-family: "Zen Maru Gothic", serif;
   text-align: center;
 }
 .txt_m > dl > dd {

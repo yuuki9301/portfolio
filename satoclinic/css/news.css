@@ -38,9 +38,7 @@
   transform: translate(-50%, -50%);
   font-size: 3.6rem;
   color: #477749;
-  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
-    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
-    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  font-family: "Zen Maru Gothic", serif;
   z-index: 2;
 }
 @media screen and (max-width: 680px) {
@@ -69,9 +67,7 @@
   border-radius: 20px;
   font-size: 2.4rem;
   color: #477749;
-  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
-    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
-    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  font-family: "Zen Maru Gothic", serif;
 }
 .newscontentflex {
   display: flex;
