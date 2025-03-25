@@ -291,7 +291,10 @@
 .abflex {
   display: flex;
   width: 90%;
-  margin: 90px auto;
+  margin: 0 auto;
+}
+.abflex :nth-child(n + 2) {
+  margin: 40px auto;
 }
 @media screen and (max-width: 680px) {
   .abflex {

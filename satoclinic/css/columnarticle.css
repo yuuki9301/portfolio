@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+/* ２ページ以降ナビボタン必須 */
+.navbtn {
+  display: grid;
+  max-width: 100%;
+  top: 140px;
+  left: 0;
+}
+@media screen and (max-width: 870px) {
+  .navbtn {
+    top: 120px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .navbtn {
+    display: none;
+  }
+}
+.peageheadcolumn {
+  width: 90%;
+  height: 265px;
+  background-image: url(../images/columnimg1.png);
+  margin: 30px auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.peageheadcolumn h2 p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3.6rem;
+  color: #477749;
+  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
+    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+}
+@media screen and (max-width: 680px) {
+  .peageheadcolumn {
+    width: 100%;
+    height: 117px;
+  }
+  .peageheadcolumn h2 p {
+    font-size: 2.4rem;
+  }
+}
+
+.article {
+  width: 90%;
+  margin: 70px auto;
+}
+/* 日付、タグ */
+.contenttop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.date {
+  color: #000;
+  font-size: 2rem;
+  position: relative;
+}
+.date::before {
+  content: "";
+  background-image: url(../images/icon3.png);
+  background-size: contain;
+  display: inline-block;
+  width: 1em;
+  height: 1.4em;
+  background-repeat: no-repeat;
+  margin-right: 0.5em;
+  position: relative;
+  top: 7px;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 1.4rem;
+  background-color: #668e68;
+  border-radius: 40px;
+  text-align: center;
+  color: #fff;
+  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
+    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  padding: 8px 20px;
+}
+
+.articletitle {
+  background-color: #668e68;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  padding: 20px;
+}
+.articletitle h3 {
+  margin-left: 20px;
+  font-size: 3.6rem;
+  color: #fff;
+  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
+    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+}
+@media screen and (max-width: 680px) {
+  .articletitle h3 {
+    font-size: 2.8rem;
+  }
+}
+.content {
+  margin-top: 50px;
+}
+.content img {
+  float: left;
+  margin-right: 20px;
+  width: 50%;
+  height: auto;
+}
+@media screen and (max-width: 680px) {
+  .content img {
+    float: none;
+    margin: 20px auto;
+    width: 100%;
+  }
+}
+.content-text {
+  font-size: 2rem;
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  line-height: 175%;
+}
